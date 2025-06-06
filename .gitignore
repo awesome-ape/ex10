@@ -30,3 +30,43 @@
 *.exe
 *.out
 *.app
+# תיקיות node_modules בכל הפרויקטים
+cookies-app/node_modules/
+jwt-app/node_modules/
+my-app/node_modules/
+
+# תיקיות build או dist בכל הפרויקטים
+cookies-app/build/
+cookies-app/dist/
+jwt-app/build/
+jwt-app/dist/
+my-app/build/
+my-app/dist/
+
+# קבצים סטטיים (במידה ויש יצירת קבצים דינאמיים בתיקיית public)
+# לרוב לא מוסיפים את public כי זה קבצים סטטיים שנכנסים לקוד, אבל אם יש שם קבצים שנוצרים בזמן ריצה - אפשר להוסיף:
+# cookies-app/public/
+# jwt-app/public/
+# my-app/public/
+
+# קבצי לוג
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# סביבות פיתוח
+.vscode/
+.idea/
+
+# קבצים זמניים
+.DS_Store
+.env
+
+# תיקיית כיסוי בדיקות (coverage)
+coverage/
+
+# lock files (אם תרצה לכלול אותם, לרוב מומלץ לעקוב)
+# package-lock.json
+# yarn.lock
